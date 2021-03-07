@@ -31,10 +31,12 @@ jobs:
         uses: Borales/actions-yarn@v2.3.0
         with:
           # Yarn command
-          cmd: CI=false npm run build
+          cmd: install
              
       - name: creating build
         run: yarn build
+        env:
+          CI: False
         
       - name: installing surge
         run: npm install -g surge
