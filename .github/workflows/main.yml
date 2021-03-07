@@ -32,6 +32,8 @@ jobs:
         with:
           # Yarn command
           cmd: install
+      - name: fixing build
+        run: npm config set unsafe-perm true
           
       - name: creating build
         run: yarn build
