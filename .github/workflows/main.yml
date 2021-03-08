@@ -35,8 +35,7 @@ jobs:
              
       - name: creating build
         run: yarn build
-        env:
-          CI: False
+       
         
       - name: installing surge
         run: npm install -g surge
