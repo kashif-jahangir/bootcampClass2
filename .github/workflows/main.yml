@@ -34,7 +34,7 @@ jobs:
           cmd: install
              
       - name: creating build
-        run: npm run build
+        run: yarn build
         env:
           CI: False
         
